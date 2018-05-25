@@ -1,0 +1,37 @@
+<script>
+	var cookiecount = 0;
+</script>
+
+<html>
+<head>
+	<title>Wumpus Clicker</title>
+	<link type="text/css" rel="stylesheet" href="wumpus.css" />
+    <script type="text/javascript" src="wumpus.js"></script>
+    <link rel="icon" href="wumpus.ico">
+
+</head>
+<body id="everything" class="everything">
+
+<br><br><br>
+	<center><a style="font-size: 80px; color: #23272A" class="aaa" id="title">Click the wumpus!</a></center>
+	<br><br>
+	<center>
+		<a href=# onclick="add()"><img src="https://uploads-ssl.webflow.com/5a586d5051b49400018c9123/5a65a0a25e467c000149426d_4b2fcb715d803320e80b0da531aaf9ae.png"></a><br><br><br>
+	</center>
+
+	<div class="bottom noselect" style="color: #23272A">
+		<a style="font-size: 30px;" id="clicks">Wumpuses: </a><input style="font-size: 30px;" type="text" id="text" disabled style= text-align:center></input><br />
+		<a style="font-size: 30px;" id="clicks">A project inspired by PikaDude and done 50% by PikaDude | 2018 Penkie.ch</a>
+
+	</div>
+<br><br>
+	<script>
+		function add() {
+			cookiecount = cookiecount + 1
+			document.getElementById('text').value = cookiecount;
+		}
+	</script>
+
+
+</body>
+</html>
